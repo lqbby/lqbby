@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>方案 A · 赛博科技风</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui,sans-serif;background:#0a0a14;color:#c8d6e5;padding:40px 20px;max-width:900px;margin:0 auto;line-height:1.7}
+.header{text-align:center;padding:50px 20px 40px;position:relative}
+.header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(123,47,255,.15),transparent),radial-gradient(ellipse 50% 40% at 80% 50%,rgba(0,240,255,.08),transparent)}
+.header h1{font-size:44px;font-weight:800;background:linear-gradient(135deg,#00f0ff,#7b2fff,#ff00e5,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:300% 300%;animation:grad 4s ease infinite;position:relative}
+@keyframes grad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.header p{color:#8892b0;font-size:16px;margin-top:8px;position:relative}
+.badges{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:20px 0;position:relative}
+.badge{padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;border:1px solid;display:inline-flex;align-items:center;gap:6px}
+.badge-blog{background:rgba(0,240,255,.1);border-color:rgba(0,240,255,.3);color:#00f0ff}
+.badge-loc{background:rgba(123,47,255,.1);border-color:rgba(123,47,255,.3);color:#7b2fff}
+.badge-tech{background:rgba(0,255,136,.1);border-color:rgba(0,255,136,.3);color:#00ff88}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.stat{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px 14px;text-align:center;transition:.3s}
+.stat:hover{border-color:rgba(123,47,255,.3);box-shadow:0 0 30px rgba(123,47,255,.1)}
+.stat-num{font-size:28px;font-weight:800;color:#00f0ff}
+.stat-label{font-size:11px;color:#8892b0;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.section{margin-top:32px}
+.section-title{font-size:18px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;color:#e0e0f0}
+.repos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.repo{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:16px;transition:.3s;text-decoration:none;color:inherit;display:block}
+.repo:hover{border-color:rgba(0,240,255,.3);transform:translateY(-2px)}
+.repo-name{font-weight:600;color:#00f0ff;font-size:15px}
+.repo-desc{font-size:12px;color:#8892b0;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.repo-meta{display:flex;gap:16px;margin-top:10px;font-size:11px;color:#6c7a90}
+.repo-meta span{display:flex;align-items:center;gap:4px}
+.lang-dot{width:10px;height:10px;border-radius:50%}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{padding:5px 12px;border-radius:6px;font-size:12px;font-family:monospace;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);color:#a0b0c0}
+.footer{text-align:center;margin-top:40px;padding:20px;color:#556070;font-size:12px;border-top:1px solid rgba(255,255,255,.05)}
+.gh-stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.gh-stats img{border-radius:6px}
+@media(max-width:600px){.stats{grid-template-columns:repeat(2,1fr)}.repos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>👋 Hi, I'm LQBBY</h1>
+  <p>Build · Break · Ship — 在浙江折腾各种东西</p>
+  <div class="badges">
+    <span class="badge badge-blog">🔗 lqbby.com</span>
+    <span class="badge badge-loc">📍 浙江 · China</span>
+    <span class="badge badge-tech">⚡ Full-Stack Tinkerer</span>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num">9</div><div class="stat-label">Public Repos</div></div>
+  <div class="stat"><div class="stat-num">27</div><div class="stat-label">Total Stars</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Followers</div></div>
+  <div class="stat"><div class="stat-num">2021</div><div class="stat-label">Joined</div></div>
+</div>
+
+<div class="section">
+  <div class="section-title">🚀 Featured Projects</div>
+  <div class="repos">
+    <a class="repo" href="https://github.com/lqbby/Tech-Home">
+      <div class="repo-name">🌟 Tech-Home</div>
+      <div class="repo-desc">🌈 一款好看的科技感个人主页</div>
+      <div class="repo-meta">
+        <span><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span>
+        <span>⭐ 26</span>
+        <span>🍴 11</span>
+      </div>
+    </a>
+    <a class="repo" href="https://github.com/lqbby/acgapi">
+      <div class="repo-name">🎨 acgapi</div>
+      <div class="repo-desc">LQBBY 随机二次元图片 API，收录 3000+ 高清图片</div>
+      <div class="repo-meta">
+        <span><span class="lang-dot" style="background:#e34c26"></span>HTML/CSS</span>
+        <span>⭐ 1</span>
+      </div>
+    </a>
+    <a class="repo" href="https://github.com/lqbby/acgurl">
+      <div class="repo-name">🐱 acgurl</div>
+      <div class="repo-desc">Live2D 看板娘 · 零依赖 · 一行引入</div>
+      <div class="repo-meta">
+        <span><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span>
+        <span>⭐ 0</span>
+      </div>
+    </a>
+    <a class="repo" href="https://github.com/lqbby/ternssh">
+      <div class="repo-name">🔐 ternssh</div>
+      <div class="repo-desc">SSH terminal tool</div>
+      <div class="repo-meta">
+        <span><span class="lang-dot" style="background:#3178c6"></span>TypeScript</span>
+        <span>⭐ 0</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">🛠️ Skills & Tools</div>
+  <div class="skills">
+    <span class="skill">HTML/CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">TypeScript</span>
+    <span class="skill">Python</span>
+    <span class="skill">Shell</span>
+    <span class="skill">Node.js</span>
+    <span class="skill">React</span>
+    <span class="skill">OpenWrt</span>
+    <span class="skill">Linux</span>
+    <span class="skill">Docker</span>
+    <span class="skill">Git</span>
+    <span class="skill">Nginx</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="gh-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=lqbby&theme=tokyonight&show_icons=true&hide_border=true&bg_color=0a0a14&title_color=00f0ff&icon_color=7b2fff&text_color=c8d6e5" height="150">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lqbby&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a14&title_color=00f0ff&text_color=c8d6e5" height="150">
+  </div>
+</div>
+
+<div class="footer">
+  2021–2026 © LQBBY · Built with 💜 and lots of ACG
+</div>
+</body>
+</html>
