@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" fill="none" role="img" aria-label="thanks for stopping by">
+  <defs>
+    <linearGradient id="footWave" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00F0FF" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#00F0FF" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#7B2FFF"/>
+      <stop offset="0.8" stop-color="#FF00E5" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FF00E5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="footArea" x1="0" y1="18" x2="0" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00F0FF" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#7B2FFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 34 C 120 6 240 62 360 40 C 480 18 600 64 720 42 C 840 20 960 60 1080 36 C 1120 28 1160 34 1200 28 L1200 110 L0 110 Z" fill="url(#footArea)"/>
+  <path d="M0 34 C 120 6 240 62 360 40 C 480 18 600 64 720 42 C 840 20 960 60 1080 36 C 1120 28 1160 34 1200 28" fill="none" stroke="url(#footWave)" stroke-width="2"/>
+  <text x="600" y="92" text-anchor="middle" font-family="Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="14" letter-spacing="0.6" fill="#7C8CA6">Thanks for stopping by &#183; lqbby.com &#183; 2021 &#8211; 2026</text>
+</svg>
